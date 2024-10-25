@@ -24,7 +24,7 @@ def main():
     if not xlsx_file:
         logger.error("No stats file")
         exit(1)
-
+    logger.info(f"Success stats: {WEBINAR_ID}, date_from='{DATE_FROM}', date_to='{DATE_TO}'")
     df = load_sheet_from_table(xlsx_file)
 
     if not write_data_to_table(df, GOOGLE_TOKEN, TABLE_ID, SHEET_NAME):
