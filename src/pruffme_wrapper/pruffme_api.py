@@ -8,7 +8,7 @@ logger = getLogger()
 
 class PruffmeWrapper:
 
-    URL_STATS = "https://socket-landing04.pruffme.com:443/webinarfullstat/"
+    URL_STATS = "https://socket-landing02.pruffme.com:443/webinarfullstat/"    # ???
     
     
     def __init__(self, session_id, timeout=60):
